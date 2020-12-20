@@ -1,0 +1,98 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.10" />
+      <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.1.2" />
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+      <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+      <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.19" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="Views\Students\Index.cshtml">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="Views\Groups\Index.cshtml">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap.css">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap.css.map">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap.min.css">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap.min.css.map">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-grid.css">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-grid.css.map">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap-grid.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-grid.min.css">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap-grid.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-grid.min.css.map">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap-grid.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-reboot.css">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-reboot.css.map">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap-reboot.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-reboot.min.css">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap-reboot.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\css\bootstrap-reboot.min.css.map">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        <DependentUpon>bootstrap-reboot.css</DependentUpon>
+      </Content>
+      <Content Update="wwwroot\js\Groups\groups.js">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="wwwroot\js\General\general.js">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\js\students" />
+    </ItemGroup>
+
+</Project>

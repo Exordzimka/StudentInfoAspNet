@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+<h1>Groups</h1>
+<div>
+    <input type="text" id="title" name="title" placeholder="Enter the title"/>
+    <input type="text" id="curatorFamily" name="curatorFamily" placeholder="Enter curator family"/>
+    <input type="text" id="titleDirection" name="titleDirection" placeholder="Enter title of direction"/>
+    <button type="button" id="addGroupButton">Add</button>
+</div>
+<div class="d-table">
+    <table class="table table-striped table-bordered table-hover d-table-row">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Curator Family</th>
+            <th>Title Direction</th>
+            <th>Average Score</th>
+        </tr>
+        </thead>
+        <tbody id="groups">
+        
+        </tbody>
+    </table>
+</div>

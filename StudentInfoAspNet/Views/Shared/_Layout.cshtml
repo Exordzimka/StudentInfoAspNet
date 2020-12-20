@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>StudentInfoAspNet</title>
+    <link rel="stylesheet" href="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.min.css")" type="text/css"/>
+</head>
+<body class="h-100">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary border border-warning border-top-0 border-right-0 border-left-0">
+        <ul class="navbar-nav mr-auto h5">
+            <li class="nav-item">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">Student Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Students" asp-action="Index">Students</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Groups" asp-action="Index">Groups</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="float-right bg-primary border border-warning border-top-0 border-right-0 border-bottom-0 h-100">
+    <h2>Top 3 Students</h2>
+    <div id="topStudents"></div>
+    <h2>Top 3 Groups</h2>
+    <div id="topGroups"></div>
+</div>
+<div>
+    @RenderBody()
+    <hr/>
+    <footer class="fixed-bottom text-center">
+        <p>© 2020 - Student Info</p>
+    </footer>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/general/general.js"></script>
+</body>
+</html>
